@@ -1,0 +1,46 @@
+{
+	"geode": "v4.0.0",
+	"gd": {
+		"win": "*"
+	},
+	"id": "yourname.gamma-settings",
+	"name": "Gamma Settings",
+	"version": "v1.0.0",
+	"developer": "YourName",
+	"description": "게임 화면의 감마 / 밝기 / 대비를 설정에서 조절합니다.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "활성화",
+			"description": "감마 보정을 켜거나 끕니다.",
+			"default": true
+		},
+		"gamma": {
+			"type": "float",
+			"name": "감마",
+			"description": "1.0 = 기본. 낮을수록 어둡고, 높을수록 밝아집니다.",
+			"default": 1.0,
+			"min": 0.2,
+			"max": 3.0,
+			"control": { "input": true, "slider": true }
+		},
+		"brightness": {
+			"type": "float",
+			"name": "밝기",
+			"description": "0.0 = 기본. 화면 전체에 더해지는 밝기 값입니다.",
+			"default": 0.0,
+			"min": -0.5,
+			"max": 0.5,
+			"control": { "input": true, "slider": true }
+		},
+		"contrast": {
+			"type": "float",
+			"name": "대비",
+			"description": "1.0 = 기본.",
+			"default": 1.0,
+			"min": 0.5,
+			"max": 2.0,
+			"control": { "input": true, "slider": true }
+		}
+	}
+}
